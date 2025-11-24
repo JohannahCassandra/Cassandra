@@ -179,5 +179,44 @@
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <!-- Falling Leaves Animation -->
+  <style>
+    .leaf {
+      position: fixed;
+      top: -50px;
+      width: 25px;
+      height: 25px;
+      background-image: url('/mnt/data/f05fcb5b-ab46-4860-9060-e366f05293a5.png');
+      background-size: cover;
+      opacity: 0.8;
+      animation: fall linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-50px) rotate(0deg); }
+      100% { transform: translateY(110vh) rotate(360deg); }
+    }
+  </style>
+
+  <script>
+    function createLeaf() {
+      const leaf = document.createElement('div');
+      leaf.classList.add('leaf');
+      leaf.style.left = Math.random() * 100 + 'vw';
+      leaf.style.animationDuration = 5 + Math.random() * 5 + 's';
+      leaf.style.width = (20 + Math.random()*25) + 'px';
+      leaf.style.height = leaf.style.width;
+      leaf.style.transform = 'rotate(' + (Math.random()*360) + 'deg)';
+      leaf.style.width = (20 + Math.random()*25) + 'px';
+      leaf.style.height = leaf.style.width;
+      leaf.style.transform = 'rotate(' + (Math.random()*360) + 'deg)';
+      leaf.style.opacity = 0.5 + Math.random() * 0.5;
+      document.body.appendChild(leaf);
+      setTimeout(() => leaf.remove(), 11000);
+    }
+    setInterval(createLeaf, 600);
+  </script>
+
 </body>
 </html>
