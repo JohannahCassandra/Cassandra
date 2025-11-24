@@ -1,122 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johannah Cassandra Jain – Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0a0a0a;
-            color: #f4edf7;
-        }
-        header {
-            background: #3d0c3c; /* Velvet */
-            padding: 30px 20px;
-            text-align: center;
-            color: #ffffff;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #000000;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #f4edf7;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 18px;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        h2 {
-            color: #b67fcf;
-            border-bottom: 2px solid #3d0c3c;
-            padding-bottom: 10px;
-        }
-        .job, .edu-item {
-            margin-bottom: 25px;
-        }
-        footer {
-            background-color: #000000;
-            padding: 20px;
-            text-align: center;
-            color: #bfa3cd;
-            margin-top: 50px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Johannah Cassandra Jain – Portfolio</title>
+  <meta name="description" content="Portfolio website of Johannah Cassandra Jain – Documentation Assistant with experience at Prime Powers Industrial Electric Corporation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --brand:#d97706; --muted:#fff7ed; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, system-ui; }
+    .glass { backdrop-filter: saturate(180%) blur(12px); background: rgba(255,255,255,.6); }
+    .pro-card { box-shadow: 0 10px 30px rgba(217,119,6,.10); }
+    .link-underline{background-image:linear-gradient(transparent,transparent),linear-gradient(var(--brand),var(--brand));background-size:0 2px,100% 2px;background-position:0 100%,0 100%;background-repeat:no-repeat;transition:background-size .3s}
+    .link-underline:hover{background-size:100% 2px,100% 2px}
+  </style>
 </head>
-<body>
+<body class="bg-white text-slate-800">
+  <header class="sticky top-0 z-50 glass border-b border-slate-200/70">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[var(--brand)] text-white font-semibold">JJ</span>
+        <span class="font-semibold tracking-tight">Johannah Cassandra Jain</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="hover:text-[var(--brand)] link-underline" href="#about">About</a>
+        <a class="hover:text-[var(--brand)] link-underline" href="#experience">Experience</a>
+        <a class="hover:text-[var(--brand)] link-underline" href="#skills">Skills</a>
+        <a class="hover:text-[var(--brand)] link-underline" href="#education">Education</a>
+        <a class="hover:text-[var(--brand)] link-underline" href="#references">References</a>
+        <a class="hover:text-[var(--brand)] link-underline" href="#contact">Contact</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-slate-200">☰</button>
+    </div>
+  </header>
 
-<header>
-    <h1>JOHANNAH CASSANDRA JAIN</h1>
-    <p>Brgy. Taculing, Bacolod City, Negros Occidental • +639640930104 • jainjohannah120@gmail.com</p>
-</header>
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+      <div class="w-[1200px] h-[1200px] rounded-full bg-[var(--muted)] absolute -top-64 -right-64"></div>
+      <div class="w-[900px] h-[900px] rounded-full bg-[var(--muted)] absolute -bottom-72 -left-72"></div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 pb-20 pt-14 md:pt-24 relative">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="uppercase tracking-widest text-xs text-slate-500">Documentation • Admin • Accounting Support</p>
+          <h1 class="mt-3 text-4xl md:text-5xl font-extrabold leading-tight">
+            Hi, I'm <span class="text-[var(--brand)]">Johannah</span>. I provide organized, accurate, and dependable administrative and accounting support.
+          </h1>
+          <p class="mt-5 text-slate-600 max-w-prose">Based in Brgy. Taculing, Bacolod City, I worked as a Documentation Assistant at Prime Powers Industrial Electric Corporation from March 2023 to June 2025, handling clerical tasks, departmental records, BIR-compliant documentation, and communication channels.</p>
+          <div class="mt-6 flex items-center gap-4 text-sm text-slate-600">
+            <a class="link-underline" href="mailto:jainjohannah120@gmail.com">jainjohannah120@gmail.com</a>
+            <span>•</span>
+            <a class="link-underline" href="tel:+639640930104">+63 964 093 0104</a>
+          </div>
+        </div>
+        <div class="md:justify-self-end">
+          <div class="relative w-full max-w-[280px] md:max-w-[320px] mx-auto">
+            <div class="aspect-square rounded-full bg-[var(--muted)] pro-card border border-slate-200 overflow-hidden">
+              <img src="Cassie.jpg" alt="Johannah Cassandra Jain" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute -bottom-4 -left-4 bg-white border border-slate-200 rounded-2xl px-4 py-2 shadow-sm text-xs">Bacolod City, Philippines</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<nav>
-    <a href="#objective">Objective</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#references">References</a>
-</nav>
+  <section id="about" class="py-16 md:py-20 bg-[var(--muted)]/60">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">About</h2>
+      <p class="mt-4 text-slate-700">To obtain a position in a reputable organization that allows me to gain practical experience, improve my capabilities, and grow both personally and professionally. As a highly motivated and adaptable individual, I am ready to learn and contribute to the success of the company.</p>
+    </div>
+  </section>
 
-<section id="objective">
-    <h2>OBJECTIVE</h2>
-    <p>To obtain a position in a reputable organization that will allow me to gain practical experience, improve my capabilities, and grow both personally and professionally. As a highly motivated and adaptable individual, I am ready to learn and contribute to the success of the company.</p>
-</section>
-
-<section id="experience">
-    <h2>WORK EXPERIENCE</h2>
-
-    <div class="job">
-        <h3>Prime Powers Industrial Electric Corporation <span style="float:right; color:#bfa3cd;">March 2023 – June 2025</span></h3>
-        <strong>Documentation Assistant</strong>
-        <ul>
-            <li>Performs general clerical duties, including filing and organizing both confidential hard copy and electronic documents, and maintaining departmental records.</li>
-            <li>Prepares and updates Manual Books of Accounts in compliance with BIR requirements.</li>
-            <li>Handles incoming calls and emails, ensuring timely and professional responses.</li>
-            <li>Provides assistance and administrative support to other departments as needed.</li>
+  <section id="experience" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Work Experience</h2>
+      <article class="mt-6 p-6 border border-slate-200 rounded-2xl pro-card">
+        <div class="flex justify-between items-baseline flex-wrap gap-3">
+          <h3 class="font-semibold text-lg">Prime Powers Industrial Electric Corporation</h3>
+          <span class="text-sm text-slate-500">March 2023 – June 2025</span>
+        </div>
+        <p class="text-sm text-slate-600 font-medium mt-1">Documentation Assistant</p>
+        <ul class="mt-3 list-disc list-inside space-y-2 text-slate-700">
+          <li>Performed general clerical duties including filing and organizing both confidential hard copy and electronic documents, and maintaining departmental records.</li>
+          <li>Prepared and updated Manual Books of Accounts in compliance with BIR requirements.</li>
+          <li>Handled incoming calls and emails, ensuring timely and professional responses.</li>
+          <li>Provided administrative support to other departments as needed.</li>
         </ul>
+      </article>
     </div>
-</section>
+  </section>
 
-<section id="education">
-    <h2>EDUCATION</h2>
-
-    <div class="edu-item">
-        <h3>Carlos Hilado Memorial State University <span style="float:right; color:#bfa3cd;">2025 – Present</span></h3>
-        <p>Bachelor of Science in Accounting Management</p>
+  <section id="skills" class="py-16 md:py-20 bg-[var(--muted)]/60">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Skills</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-6">
+        <div class="p-4 border rounded-xl bg-white">Analytical & Problem Solving</div>
+        <div class="p-4 border rounded-xl bg-white">Time Management</div>
+        <div class="p-4 border rounded-xl bg-white">Organizational Skills</div>
+        <div class="p-4 border rounded-xl bg-white">Adaptability & Willingness to Learn</div>
+        <div class="p-4 border rounded-xl bg-white">Proficiency in Accounting Software</div>
+        <div class="p-4 border rounded-xl bg-white">Basic Accounting</div>
+        <div class="p-4 border rounded-xl bg-white">Computer Literacy</div>
+      </div>
     </div>
+  </section>
 
-    <div class="edu-item">
-        <h3>University of St. La Salle – Bacolod <span style="float:right; color:#bfa3cd;">2022 – 2025</span></h3>
-        <p>Bachelor of Science in Accounting Information System</p>
-        <p>Bachelor of Science in Accountancy</p>
+  <section id="education" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Education</h2>
+
+      <div class="mt-6 space-y-4">
+        <div class="p-6 border rounded-2xl pro-card bg-white">
+          <div class="flex justify-between flex-wrap gap-3">
+            <div>
+              <h3 class="font-semibold">Carlos Hilado Memorial State University</h3>
+              <p class="text-sm text-slate-600">Bachelor of Science in Accounting Management</p>
+            </div>
+            <span class="text-sm text-slate-500">2025 – Present</span>
+          </div>
+        </div>
+
+        <div class="p-6 border rounded-2xl pro-card bg-white">
+          <div class="flex justify-between flex-wrap gap-3">
+            <div>
+              <h3 class="font-semibold">University of St. La Salle – Bacolod</h3>
+              <p class="text-sm text-slate-600">Bachelor of Science in Accounting Information System</p>
+              <p class="text-sm text-slate-600">Bachelor of Science in Accountancy</p>
+            </div>
+            <span class="text-sm text-slate-500">2022 – 2025</span>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="references">
-    <h2>REFERENCES</h2>
+  <section id="references" class="py-16 md:py-20 bg-[var(--muted)]/60">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">References</h2>
 
-    <p><strong>April Rose Marcos</strong><br>
-    Operations Manager<br>
-    Prime Powers Industrial and Electric Corporation<br>
-    09093152185</p>
+      <div class="grid sm:grid-cols-2 gap-6 mt-6">
+        <div class="p-6 border rounded-2xl bg-white pro-card">
+          <h3 class="font-semibold">April Rose Marcos</h3>
+          <p class="text-sm text-slate-600">Operations Manager, Prime Powers Industrial and Electric Corporation</p>
+          <p class="mt-2 text-sm"><a class="link-underline" href="tel:+639093152185">09093152185</a></p>
+        </div>
 
-    <p><strong>Paulaine Jay Boissy</strong><br>
-    Administrative Head<br>
-    Prime Powers Industrial and Electric Corporation<br>
-    09064818814</p>
-</section>
+        <div class="p-6 border rounded-2xl bg-white pro-card">
+          <h3 class="font-semibold">Pauline Jay Boissy</h3>
+          <p class="text-sm text-slate-600">Administrative Head, Prime Powers Industrial and Electric Corporation</p>
+          <p class="mt-2 text-sm"><a class="link-underline" href="tel:+639064818814">09064818814</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer>
-    <p>© 2025 Johannah Cassandra Jain – Portfolio</p>
-</footer>
+  <section id="contact" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Contact</h2>
 
+      <p class="mt-4 text-slate-700">You may reach me at <a class="link-underline" href="mailto:jainjohannah120@gmail.com">jainjohannah120@gmail.com</a> or through my mobile number <a class="link-underline" href="tel:+639640930104">+63 964 093 0104</a>.</p>
+    </div>
+  </section>
+
+  <footer class="border-t border-slate-200 bg-white py-8">
+    <div class="max-w-6xl mx-auto px-4 text-sm text-slate-600 flex flex-col md:flex-row items-center justify-between gap-3">
+      <p>© <span id="year"></span> Johannah Cassandra Jain. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a class="link-underline" href="tel:+639640930104">+63 964 093 0104</a>
+        <span>•</span>
+        <a class="link-underline" href="mailto:jainjohannah120@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
